@@ -3,3 +3,4 @@ gunicorn
 whitenoise
 sqlparse
 pillow
+django-widget-tweaks
