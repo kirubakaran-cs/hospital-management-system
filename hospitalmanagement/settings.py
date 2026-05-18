@@ -27,7 +27,7 @@ SECRET_KEY = 'hpbv()ep00boce&o0w7z1h)st148(*m@6@-rk$nn)(n9ojj4c0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -124,6 +124,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS=[STATIC_DIR,]
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_ROOT=os.path.join(BASE_DIR,'static')
 
